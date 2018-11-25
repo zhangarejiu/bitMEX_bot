@@ -1,5 +1,5 @@
 # @Date:   2018-11-19T22:34:49+09:00
-# @Last modified time: 2018-11-21T00:18:39+09:00
+# @Last modified time: 2018-11-25T11:53:43+09:00
 
 
 
@@ -282,7 +282,7 @@ while True:
             flag3,order_fin3 = trade(symbol=symbol1,order_name='sell', LOT=LOT1)
         if LOT2 != 0:
             flag4,order_fin4 = trade(symbol=symbol2,order_name='buy', LOT=LOT2)
-        if len(order_fin3)*len(order_fin4) != 0:
+        if order_fin3*order_fin4 != 0:
             print('Loss Cut 2!!')
             sys.exit()
 
